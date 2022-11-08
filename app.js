@@ -8,8 +8,6 @@ var outputDiv = document.querySelector("#output");
 
 // var serverUrl="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=I am vidhi makani"
 
-// var serverUrl = "https://api.funtranslations.com/translate/minion.json"
-
 var  serverUrl="https://api.funtranslations.com/translate/groot.json"
 
 function getTranslationURL(input) {

@@ -9,6 +9,13 @@ section {
 }
 
 /* textarea */
+img{
+  max-width: 2%;
+  width: 35px;
+  display: inline;
+  margin: auto;
+
+}
 
 textarea {
   display: inline-block;
