@@ -1,79 +1,79 @@
 body {
-    margin: 0;
-    font-family: "Edu VIC WA NT Beginner", cursive;
-    font-size: 1.2em;
-  }
-  
-  section {
-    text-align: center;
-  }
-  
-  /* textarea */
+  margin: 0;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-size: 1.2em;
+}
 
-  textarea {
-    display: inline-block;
-    width: 30%;
-    margin: 30px auto;
-    height: 20vh;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-family: inherit;
-  }
-  
-  /* buttons */
+section {
+  text-align: center;
+}
 
-  button {
-    display: inline-block;
-    margin: 20px auto;
-    border-radius: 2rem;
-    background-color:#65a30d;
-    border: none;
-    margin: 1rem 0rem;
-    padding: 1rem 2rem;
-    font-size: large;
-  }
-  
-  /* headings */
-  h1 {
-    text-align: center;
-    background-color: #65a30d;
-    margin: 0;
-    padding: 20px 0;
-    font-size: 2em;
-  }
-  
-  /* output */
-  #output {
-    display: inline-block;
-    width: 30%;
-    height: 20vh;
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 1rem;
-    text-align: left;
-    font-size: 1.5rem;
-  }
-  
-  /* footer */
-  footer {
-    background-color: #65a30d;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
-  #footer-div {
-    display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
-    width: 30%;
-  }
-  
-  .footer-heading {
-    padding: 10px 0;
-  }
-  
-  .output-font {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
+/* textarea */
+
+textarea {
+  display: inline-block;
+  width: 85%;
+  margin: 30px auto;
+  height: 20vh;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+}
+
+/* buttons */
+
+button {
+  display: inline-block;
+  margin: 20px auto;
+  border-radius: 2rem;
+  background-color:#65a30d;
+  border: none;
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  font-size: large;
+}
+
+/* headings */
+h1 {
+  text-align: center;
+  background-color: #65a30d;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 1.7em;
+}
+
+/* output */
+#output {
+  display: inline-block;
+  width: 85%;
+  height: 20vh;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* footer */
+footer {
+  background-color: #65a30d;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#footer-div {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  width: 60%;
+}
+
+.footer-heading {
+  padding: 10px 0;
+}
+
+.output-font {
+  font-size: 1.5rem;
+  font-weight: 600;
+}

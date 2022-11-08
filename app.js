@@ -1,33 +1,43 @@
-var btnTranslate = document.querySelector("#btn-translate");//referenced the btn by using querySelector
-var txtInput = document.querySelector("#text-input");// referenced to the  textarea by ussing querySelector
-var outputDiv = document.querySelector("#output");// for the ouput div rerencing
+// console.log("hello! script is working in new file")
 
- 
-var serverURL = "https://api.funtranslations.com/translate/yoda.json?text=Master%20Obiwan%20has%20lost%20a%20planet."
+// var username =prompt("give me ypur user name");
+
+var btntranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
+
+// var serverUrl="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=I am vidhi makani"
+
+// var serverUrl = "https://api.funtranslations.com/translate/minion.json"
+
+var  serverUrl="https://api.funtranslations.com/translate/groot.json"
 
 function getTranslationURL(input) {
-    return serverURL + "?" + "text=" + input // taking input from here
+  return serverUrl + "?" + "text=" + input;
 }
 
-//error handling part
-
+// console.log(outputDiv);
+// outputDiv.innerText="vidhi makani"
+// console.log(txtInput)
 function errorHandler(error) {
-    console.log("error occured", error); 
-    alert("Something went wrong with server! try again after some time");
+  console.log("error occured", error);
+  alert("somthing wrong with server! try again after some time");
 }
+// btntranslate.addEventListener("click", function clickEventHandler{
+// console.log("clicked");  
+// console.log("input",txtInput.value);
+// outputDiv.innerText="asasasasaas"+ txtInput.value;
 
- function clickHandler() {
-//   outputDiv.innerHTML = "asjsjsjs " + txtInput.value;
- var inputText = txtInput.value;
+function clickHandler() {
+  var inputText = txtInput.value; //taking value
 
- // calling server for processing
-
- fetch(getTranslationURL(inputText))
- .then(response => response.json())
- .then(json => {
-    var translatedText = json.contents.translated;
-    outputDiv.innerHTML = translatedText;
- })
- .catch(errorHandler)
-
-} ;
+  fetch(getTranslationURL(inputText)) //calling server for processing
+    .then((response) => response.json())
+    //.then(json=>//console.log(json.contents.translated))
+    .then((json) => {
+      var translatedText = json.contents.translated;
+      outputDiv.innerText = translatedText;
+    })
+    .catch(errorHandler);
+}
+btntranslate.addEventListener("click", clickHandler);  
